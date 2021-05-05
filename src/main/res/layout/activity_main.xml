@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#232223"
+    android:weightSum="6"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:background="#96F8CD"
+        android:gravity="end|center"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#0F0F10"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/clearBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:backgroundTint="#9F2828"
+            android:onClick="clearBTN"
+            android:text="AC"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#9E2323" />
+
+        <Button
+            android:id="@+id/parenthesesBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="parBTN"
+            android:text="()"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+        <Button
+            android:id="@+id/exponentBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="expBTN"
+            android:text="^"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+        <Button
+            android:id="@+id/backspaceBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="backspaceBTN"
+            android:text="⌫"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/sevenBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="7"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="sevenBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/eightBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="8"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="eightBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/nineBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="9"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="nineBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+
+        <Button
+            android:id="@+id/divideBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="divideBTN"
+            android:text="/"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/fourBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="4"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="fourBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/fiveBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="5"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="fiveBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/sixBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="6"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="sixBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+
+        <Button
+            android:id="@+id/multiplyBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="multiplyBTN"
+            android:text="X"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/oneBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="1"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="oneBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/twoBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="2"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="twoBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+        <Button
+            android:id="@+id/threeBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="3"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="threeBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+
+        <Button
+            android:id="@+id/subtractBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="subtractBTN"
+            android:text="-"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/pointBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="decimalBTN"
+            android:text="."
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+        <Button
+            android:id="@+id/zeroBTN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="0"
+            android:layout_margin="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:onClick="zeroBTN"
+            android:background="@drawable/keyboard_btn"
+            />
+
+        <Button
+            android:id="@+id/equalsBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="equalBTN"
+            android:text="="
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#3ABD3F" />
+
+        <Button
+            android:id="@+id/addBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:onClick="addBTN"
+            android:text="+"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:backgroundTint="#45BBCA" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
